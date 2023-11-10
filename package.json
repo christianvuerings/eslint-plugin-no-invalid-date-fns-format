@@ -1,0 +1,35 @@
+{
+  "name": "eslint-plugin-no-invalid-date-fns-format",
+  "version": "0.0.1",
+  "description": "ESLint plugin to encourage the use of an internal design system",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/christianvuerings/eslint-plugin-no-invalid-date-fns-format"
+  },
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write .",
+    "test": "jest"
+  },
+  "author": "Christian Vuerings",
+  "license": "MIT",
+  "files": [
+    "docs",
+    "dist",
+    "index.d.ts",
+    "index.js",
+    "package.json"
+  ],
+  "prepublishOnly": "npm run build",
+  "dependencies": {
+    "@typescript-eslint/utils": "5.62.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "5.62.0",
+    "esbuild-jest": "^0.5.0",
+    "eslint": "^8.51.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.0.3"
+  }
+}
