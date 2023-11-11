@@ -30,7 +30,7 @@ export default createRule<Options, MessageIds>({
     },
     messages: {
       invalidDateFormat:
-        "Date format is not allowed, please use one of {{pattern}}.",
+        "Date format is not allowed, please use one of {{validPatterns}}.",
     },
     type: "problem",
     fixable: "code",
